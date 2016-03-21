@@ -42,35 +42,39 @@
 </head>
 <body>
 
-    <div ng-app="app" class="app">
-        <h5>Register</h5>
+  <div ng-app="app" class="app">
+      <div ng-controller="FormController as ctrl">
+          <h5>Register</h5>
 
-        <form name="form">
-            <label>Username</label>
+          <form name="form">
+              <label>Username</label>
 
-            <input
-                name="username"
-                minlength="2"
-                maxlength="5"
-                required="required" />
+              <input
+                  name="username"
+                  minlength="2"
+                  ng-model="ctrl.username"
+                  required="required" />
 
-            <label>Password</label>
+              <label>Password</label>
 
-            <input
-                name="password"
-                type="password"
-                minlength="8"
-                required="required" />
+              <input
+                  name="password"
+                  type="password"
+                  minlength="8"
+                  ng-model="ctrl.password"
+                  required="required" />
 
-            <label>Email</label>
+              <label>Email</label>
 
-            <input
-                name="email"
-                type="email"
-                minlength="2"
-                required="required" />
-        </form>
-    </div>
+              <input
+                  name="email"
+                  type="email"
+                  minlength="2"
+                  ng-model="ctrl.email"
+                  required="required" />
+          </form>
+      </div>
+  </div>
 
     <script src="js/angular.js"></script>
     <script src="js/angular-messages.js"></script>
