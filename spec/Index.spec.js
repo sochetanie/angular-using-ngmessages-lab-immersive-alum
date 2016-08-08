@@ -17,13 +17,11 @@ describe('Events Test', function() {
 		});
 
 		it('should make sure the username is more than 2 characters', function() {
-			username.click();
 			username.sendKeys('a');
 			expect(messages.getText()).toContain('2');
 		});
 
 		it('should not say anything when valid', function() {
-			username.click();
 			username.sendKeys('aa');
 			expect(messages.getText()).toEqual('');
 		});
@@ -39,13 +37,11 @@ describe('Events Test', function() {
 		});
 
 		it('should make sure the password is more than 8 characters', function() {
-			password.click();
 			password.sendKeys('aa');
 			expect(messages.getText()).toContain('8');
 		});
 
 		it('should not say anything when valid', function() {
-			password.click();
 			password.sendKeys('aaasdasd');
 			expect(messages.getText()).toEqual('');
 		});
@@ -61,13 +57,11 @@ describe('Events Test', function() {
 		});
 
 		it('should make sure the email is valid', function() {
-			email.click();
 			email.sendKeys('aaaaaa');
 			expect(messages.getText()).toContain('valid');
 		});
 
 		it('should not say anything when valid', function() {
-			email.click();
 			email.sendKeys('aaasdasd@test.com');
 			expect(messages.getText()).toEqual('');
 		});
