@@ -7,6 +7,6 @@
 
 ## Instructions
 
-In this repo we've got a form that needs error messages displayed for it's validation rules.
+In this repo, we have a form that needs error messages displayed for its validation rules.
 
 Add the `ngMessages` module to our app (the file is already included), and then add the validation errors by using `ngMessages`.
